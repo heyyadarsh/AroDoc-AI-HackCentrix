@@ -1,16 +1,14 @@
-# React + Vite
+# 🏥 AroDoc AI - HackCentrix Submission
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**AroDoc AI** is a medical triage assistant powered by **Google Gemini 1.5 Flash**. It solves the problem of delayed healthcare intervention by categorizing symptoms into intuitive Risk Levels (Green/Yellow/Red).
 
-Currently, two official plugins are available:
+### 🚀 Key Features
+* **AI-Powered Triage:** Instant symptom analysis using Google's Generative AI.
+* **Lifestyle Prescriptions:** Auto-generates Nutrition and Recovery advice.
+* **Emergency Protocol:** Dedicated SOS module for critical 'Red Risk' scenarios.
+* **Secure History:** Dashboard to track past health records.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### ⚠️ Security Note for Judges
+To prevent unauthorized usage, the **API Key has been removed** from `src/App.jsx`.
+* The app includes a **"Backup Demo Mode"** that will automatically run if no key is detected, ensuring the prototype is fully testable without crashing.
+* To enable live AI, paste a valid `GEMINI_API_KEY` in `App.jsx`.
